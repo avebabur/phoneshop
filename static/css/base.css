@@ -1,0 +1,118 @@
+* {
+    text-decoration: none;
+}
+.container {
+    border: 6px solid rgb(64, 117, 215);
+    border-radius: 45px;
+    padding: 5px;
+    margin: 10px;
+    
+}
+/* Dropdown Button */
+.dropbtn {
+background-color: #14aec6;
+color: white;
+padding: 50px;
+font-size: 30px;
+border: none;
+}
+
+.not_dropdown {
+background-color: #14aec6;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+display: flex;
+}
+.not_dropdown h1 a {
+color: white;
+}
+.not_dropdown h1 {
+padding: 10px;
+}
+header {
+justify-content: center;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: rgb(46,103,160);
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 69px;
+text-decoration: none;
+display: block;
+}
+.header {
+display: flex;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3a42b9;}
+.not_dropdown .g:hover {background-color: #3a42b9;}
+.not_dropdown .s:hover {background-color: #3a42b9;}
+.delete {
+color: red;
+}
+.edit {
+color: green;
+}
+form.example input[type=text] {
+padding: 10px;
+font-size: 17px;
+border: 1px solid grey;
+float: left;
+width: 80%;
+background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+float: left;
+width: 20%;
+padding: 10px;
+background: #2196F3;
+color: 2E67A0;
+font-size: 17px;
+border: 1px solid grey;
+border-left: none; /* Prevent double borders */
+cursor: pointer;
+}
+
+form.example button:hover {
+background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+content: "";
+clear: both;
+display: table;
+}
+
+img {
+    width: 100%;
+}
+.header {
+    justify-content: center;
+}

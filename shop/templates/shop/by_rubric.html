@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ current_rubric.name }}</h1>
+{% for phone in phones %}
+    <p>{{ phone.name }}</p>
+    <p>{{ phone.body }}</p>
+    <p>{{ phone.date }}</p>
+    <img src="{{phone.image.url}}" alt="fotochkaaaa">
+    {% if user.is_staff %}
+    <h5><a class="delete" href="/shop/{{phone.pk}}/delete/">Delete</a></h5>
+    <h5><a class="edit" href="/shop/{{phone.pk}}/edit/">Edit</a></h5>
+    {% endif %}
+{% endfor %}
+{% endblock %}
